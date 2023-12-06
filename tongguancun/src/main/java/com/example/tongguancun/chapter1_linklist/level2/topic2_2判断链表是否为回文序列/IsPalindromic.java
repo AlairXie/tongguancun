@@ -1,6 +1,6 @@
 package com.example.tongguancun.chapter1_linklist.level2.topic2_2判断链表是否为回文序列;
 
-import com.example.tongguancun.chapter1_linklist.level2.Node;
+import com.example.tongguancun.Commom.Node;
 
 import java.util.Stack;
 

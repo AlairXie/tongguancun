@@ -1,6 +1,7 @@
 package com.example.tongguancun.chapter1_linklist.level2.topic2_1第一个公共节点;
 
-import com.example.tongguancun.chapter1_linklist.level2.Node;
+import com.example.tongguancun.Commom.InitList;
+import com.example.tongguancun.Commom.Node;
 
 import java.util.*;
 
@@ -16,7 +17,7 @@ public class FindFirstCommonNode {
 
     // 测试案例
     public static void main(String[] args) {
-        Node[] heads = initLinkedList();
+        Node[] heads = InitList.initLinkedList();
         //la 为 1 2 3 4 5
         //lb 为 11 22 4 5
         Node la = heads[0];
@@ -24,7 +25,7 @@ public class FindFirstCommonNode {
 
 
 
-        int testMethod = 3;
+        int testMethod = 4;
         Node node = new Node(0);
         switch (testMethod) {
             case 1: //方法1：通过Hash辅助查找
@@ -36,9 +37,9 @@ public class FindFirstCommonNode {
             case 3://方法3：通过栈辅助查找
                 node = findFirstCommonNodeByStack(la, lb);
                 break;
-//            case 4://方法4：通过拼接辅助查找
-//                node = findFirstCommonNodeByCombine(la, lb);
-//                break;
+            case 4://方法4：通过拼接辅助查找
+                node = findFirstCommonNodeByCombine(la, lb);
+                break;
 //            case 5://方法5：通过差辅助查找
 //                node = findFirstCommonNodeBySub(la, lb);
 //                break;
@@ -123,43 +124,30 @@ public class FindFirstCommonNode {
 
 
 
-    // 方法4 双指针
-
-
-    /**
-     * 简单构造两个链表
-     *
-     * @return
-     */
-    private static Node[] initLinkedList() {
-        Node[] heads = new Node[2];
-//        构造第一个链表交点之前的元素 1 ->2-> 3
-        heads[0] = new Node(1);
-        Node current1 = heads[0];
-        current1.next = new Node(2);
-        current1 = current1.next;
-        current1.next = new Node(3);
-        current1 = current1.next;
-//        11->22
-//        构造第二个链表交点之前的元素
-        heads[1] = new Node(11);
-        Node current2 = heads[1];
-        current2.next = new Node(22);
-        current2 = current2.next;
-//        构造公共交点以及之后的元素
-
-        Node node4 = new Node(4);
-        current1.next = node4;
-        current2.next = node4;
-        Node node5 = new Node(5);
-        node4.next = node5;
-
-
-        Node node6 = new Node(6);
-        node5.next = node6;
-
-        return heads;
+    // 方法4 拼接双指针
+    public static Node findFirstCommonNodeByCombine(Node head1,Node head2){
+        if (head1 == null || head2 == null){
+            return null;
+        }
+        Node p1 = head1;
+        Node p2 =head2;
+        while(p1 != p2){
+            p1 = p1.next;
+            p2 = p2.next;
+            if(p1!=p2){
+                if(p1==null){
+                    p1 = head2;
+                }
+                if (p2==null){
+                    p2 = head1;
+                }
+            }
+        }
+        return p1;
     }
+
+
+
 
 }
 
