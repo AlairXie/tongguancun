@@ -1,6 +1,7 @@
 package com.example.tongguancun.chapter1_linklist.level2.topic2_4双指针;
 
-import com.example.tongguancun.Commom.Node;
+import com.example.tongguancun.chapter1_linklist.Commom.InitList;
+import com.example.tongguancun.chapter1_linklist.Commom.Node;
 
 /**
  * 寻找中间节点
@@ -14,7 +15,7 @@ public class MiddleNode {
         Node middle = middleNode(nodeA);
         System.out.println(middle.val);
     }
-    
+
     public static Node middleNode(Node head){
         Node fast = head,slow = head;
         while(fast != null && fast.next != null){

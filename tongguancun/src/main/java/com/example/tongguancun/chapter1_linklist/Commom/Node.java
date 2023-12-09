@@ -1,4 +1,4 @@
-package com.example.tongguancun.Commom;
+package com.example.tongguancun.chapter1_linklist.Commom;
 
 /**
  * @author xieyunpeng
@@ -20,4 +20,5 @@ public class Node {
                 ", next=" + next +
                 '}';
     }
+
 }

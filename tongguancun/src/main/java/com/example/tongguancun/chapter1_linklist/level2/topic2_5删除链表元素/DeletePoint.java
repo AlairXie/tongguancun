@@ -1,7 +1,7 @@
 package com.example.tongguancun.chapter1_linklist.level2.topic2_5删除链表元素;
 
-import com.example.tongguancun.Commom.InitList;
-import com.example.tongguancun.Commom.Node;
+import com.example.tongguancun.chapter1_linklist.Commom.InitList;
+import com.example.tongguancun.chapter1_linklist.Commom.Node;
 
 /**
  * 删除特定节点

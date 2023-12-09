@@ -1,7 +1,7 @@
 package com.example.tongguancun.chapter1_linklist.level2.topic2_3合并有序链表;
 
-import com.example.tongguancun.Commom.InitList;
-import com.example.tongguancun.Commom.Node;
+import com.example.tongguancun.chapter1_linklist.Commom.InitList;
+import com.example.tongguancun.chapter1_linklist.Commom.Node;
 
 /**
  * @author xieyunpeng

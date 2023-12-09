@@ -1,7 +1,7 @@
 package com.example.tongguancun.chapter1_linklist.level2.topic2_4双指针;
 
-import com.example.tongguancun.Commom.InitList;
-import com.example.tongguancun.Commom.Node;
+import com.example.tongguancun.chapter1_linklist.Commom.InitList;
+import com.example.tongguancun.chapter1_linklist.Commom.Node;
 
 /**
  * 旋转链表
