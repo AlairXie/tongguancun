@@ -1,8 +1,8 @@
 package com.example.tongguancun.chapter1_linklist.level2.topic2_1第一个公共节点;
 
 
-import com.example.tongguancun.chapter1_linklist.Commom.InitList;
-import com.example.tongguancun.chapter1_linklist.Commom.Node;
+import com.example.tongguancun.Commom.InitList;
+import com.example.tongguancun.Commom.Node;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package com.example.tongguancun.chapter1_linklist.Commom;
+package com.example.tongguancun.Commom;
 
 /**
  * @Author xieyunpeng

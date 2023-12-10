@@ -1,7 +1,7 @@
 package com.example.tongguancun.chapter1_linklist.levell3;
 
-import com.example.tongguancun.chapter1_linklist.Commom.InitList;
-import com.example.tongguancun.chapter1_linklist.Commom.Node;
+import com.example.tongguancun.Commom.InitList;
+import com.example.tongguancun.Commom.Node;
 
 /**
  * 判断是否存在环

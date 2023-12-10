@@ -1,6 +1,6 @@
 package com.example.tongguancun.chapter1_linklist.level2.topic2_4双指针;
-import com.example.tongguancun.chapter1_linklist.Commom.InitList;
-import com.example.tongguancun.chapter1_linklist.Commom.Node;
+import com.example.tongguancun.Commom.InitList;
+import com.example.tongguancun.Commom.Node;
 
 /**
  * 寻找链表倒数第K个结点

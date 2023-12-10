@@ -1,7 +1,7 @@
-package com.example.tongguancun.chapter2_reverselist.lever1;
+package com.example.tongguancun.chapter2_reverselist.level1;
 
-import com.example.tongguancun.chapter2_reverselist.Commom.InitList;
-import com.example.tongguancun.chapter2_reverselist.Commom.Node;
+import com.example.tongguancun.Commom.InitList;
+import com.example.tongguancun.Commom.Node;
 
 /**
  * 反转链表
