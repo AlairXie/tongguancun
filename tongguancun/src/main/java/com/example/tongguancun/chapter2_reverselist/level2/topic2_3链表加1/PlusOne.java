@@ -2,7 +2,6 @@ package com.example.tongguancun.chapter2_reverselist.level2.topic2_3链表加1;
 
 import com.example.tongguancun.Commom.InitList;
 import com.example.tongguancun.Commom.Node;
-import lombok.val;
 
 /**
  * lc 369
